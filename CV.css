@@ -6,8 +6,12 @@ body{
     font-family: 'Roboto', Arial, Verdana, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h2, h4, h5, h6{
     font-family: "Lato", serif !important;
+}
+
+h3, h1{ 
+    font-family: 'Sacramento', cursive;
 }
 
 p, span, a{
@@ -84,7 +88,6 @@ p, span, a{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 
 .nav-content{
 	position: relative;
@@ -199,6 +202,69 @@ p, span, a{
 
 
 
+/* M E N U */
+
+.side-menu {
+    width:14em;
+    height: auto;
+    margin:0em auto 0;
+    font-size: 1em;
+    line-height: 2em;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:fixed;
+    top:0; 
+    bottom:0;
+    left: -10em;
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    opacity: 0.7;
+    display:block;
+    background-color: #333;
+    height: 3em;
+    padding: 1em 1.5em;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s, opacity .5s;
+}
+/*the colors of the different columns*/
+.side-menu ul li:nth-child(1) { background-color: #00aced;}
+.side-menu ul li:nth-child(2) { background-color: #0298d1;}
+.side-menu ul li:nth-child(3) { background-color: #0289bd;}
+.side-menu ul li:nth-child(4) { background-color: #0276a3;}
+.side-menu ul li:nth-child(5) { background-color: #01648a;}
+.side-menu ul li:nth-child(6) { background-color: #015170;}
+
+.side-menu ul li:hover {
+    opacity: 1;
+    background-color: #3b5998; 
+    -webkit-transform: translateX(10em);
+    transform: translateX(10em);
+}
+.side-menu ul li a {
+    display:block;
+    color: #FFF;
+    text-decoration: none;
+}
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size:1em;
+    line-height: 1.5em;
+    height:3em;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1em 1.5em;
+    right: 0.1em;
+    color: #F8F6FF;
+}
 
 
 /* A B O U T */
@@ -251,8 +317,8 @@ p, span, a{
 
 #cv .row h3{
 	border-bottom: 3px solid #11ABB0;
-	font-size: 24px;
-	padding-bottom: 5px;
+	font-size: 45px;
+	padding-bottom: 6px;
     width: min-content;
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -265,6 +331,7 @@ p, span, a{
 	margin-bottom: 80px;
 }
 
+
 .skills + .skills{
     margin-top: 60px;
 
@@ -272,7 +339,7 @@ p, span, a{
 
 .skills > h4{
     color: #11ABB0;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 #cv .skill-item + .skill-item{
