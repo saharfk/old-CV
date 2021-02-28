@@ -175,7 +175,7 @@
             </div>
           </div>
           <div class="col-md-2 col-sm-12">
-            <img src="imgs/experience.png">
+            <img class="img" src="imgs/experience.png">
           </div>
         </div>
 
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div class="col-md-2 col-sm-12">
-            <img src="imgs/education.png">
+            <img class="img" src="imgs/education.png">
           </div>
         </div>
 
@@ -274,7 +274,7 @@
 
           </div>
           <div class="col-md-2 col-sm-12">
-            <img src="imgs/certificate.png">
+            <img class="img" src="imgs/certificate.png">
           </div>
         </div>
 
@@ -296,14 +296,14 @@
               <div class="firstname">
                 <input id="firstname" type="text" name="firstname">
                 <span class="focus-border"></span>
-                <label class="label" for="firstname">Firstname *</label>
+                <label class="label" for="firstname">Firstname</label>
 
               </div>
 
               <div class="lastname">
                 <input id="lastname" type="text" name="lastname">
                 <span class="focus-border"></span>
-                <label class="label" for="name">Lastname *</label>
+                <label class="label" for="name">Lastname</label>
 
               </div>
 
@@ -311,20 +311,20 @@
                 <input id="email" type="email" name="email">
                 <span class="focus-border"></span>
                 <label class="label" for="email">Email *</label>
-
+                 <small class="form-text text-danger feedback"></small>
               </div>
 
               <div class="tel">
                 <input id="phone" type="tel" name="phone">
                 <span class="focus-border"></span>
-                <label class="label" for="phone">Phone</label>
-
+                <label class="label" for="phone">Phone *</label>
+                 <small class="form-text text-danger feedback"></small>
               </div>
 
               <div class="subject">
                 <input id="subject" type="text" name="subject">
                 <span class="focus-border"></span>
-                <label class="label" for="subject">Subject *</label>
+                <label class="label" for="subject">Subject</label>
 
               </div>
 
@@ -332,7 +332,8 @@
                 <textarea id="message" name="message"></textarea>
                 <span class="focus-border"></span>
                 <label class="label" for="message">Message *</label>
-
+                <small id="characterCount" class="form-text"></small>
+                <small class="form-text text-danger feedback"></small>
               </div>
 
               <div class="input-info">* required field</div>

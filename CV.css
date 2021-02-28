@@ -387,7 +387,9 @@ p, span, a{
 	color: #888;
 }
 
-
+.img {
+    border-radius: 50%;
+}
 
 /*  C O N T A C T */
 
@@ -424,13 +426,17 @@ p, span, a{
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+form label {
+  cursor: pointer;
 }
 
 #form > div {
@@ -483,10 +489,6 @@ p, span, a{
     transition: 0.4s;
 }
 
-input:focus ~ .focus-border, textarea:focus ~ .focus-border{
-    width: 100%;
-}
-
 #contact textarea{
     resize: vertical;
     overflow-y: auto;
@@ -522,7 +524,7 @@ input:focus ~ .focus-border, textarea:focus ~ .focus-border{
     -webkit-transition: .4s ease all;
     transition: .4s ease all;
     position: absolute;
-    top: 25px !important;
+    top: 0px !important;
     color: #AAA;
     text-align: left;
     font-size: 16px;
@@ -543,32 +545,6 @@ input:focus ~ .label, textarea:focus ~ .label[for=message], input.has-value ~ .l
     color: #11ABB0;
     text-align: left;
 }
-
-@media (max-width: 768px){
-
-    #contact .left{
-        display: none;
-    }
-
-    #contact .row{
-    	margin: auto;
-    	width: 90%;
-    }
-
-    #form{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-
-    .firstname, .lastname, .email, .tel, .btn-div{
-        width: 100%;
-    }
-
-}
-
-
 
 
 
