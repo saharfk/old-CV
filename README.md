@@ -1,3 +1,3 @@
 # CV
 
-writnig my CV 
+a webpage of my CV 
